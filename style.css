@@ -1,0 +1,100 @@
+@import url('htpps://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Poppins',sans-serif;
+}
+body
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f8ceec;
+	background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
+}
+
+h2
+{
+	margin-right: 50px;
+
+}
+
+
+.calc
+{
+	position: relative;
+	display: grid;
+	transition: 2s ease;
+	box-shadow: 0 0 20px 20px black;
+}
+
+.calc:hover
+{
+	transform: scale(1.2);
+	transition: 2s ease;
+}
+.calc .value
+{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.calc span
+{
+	display: flex;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+	justify-content: center;
+	border: 2px solid rgba(0,0,0,.2);
+}
+
+.calc span:hover
+{
+	background-color: #bdd4e7;
+background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+
+
+}
+
+.calc span:active
+{
+	background: #74ff3b;
+	color: #111;
+}
+
+.calc span.erase
+{	
+	grid-column: span 2;
+	width: 120px;
+	background-color: #a40606;
+background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+
+
+}
+
+.calc span.add
+{
+	grid-row: span 2;
+	height: 120px;
+}
+
+.calc span.equal
+{
+	background-color: #9fa4c4;
+background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+
+}
